@@ -8,8 +8,8 @@ import static org.junit.Assert.assertTrue;
 // (V) $5 * 2 = $10
 // (V) Dollar side effect? -> FP in Scala
 // (V) equality
+// (V) amount 필드를 private
 // $5 + 10CHF = $10 (환율 2:1)
-// amount 필드를 private
 // Money 반올림?
 // hashCode
 // equal null
@@ -28,8 +28,8 @@ public class MoneyTest {
     @Test
     public void dollar() {
         Dollar dollar = new Dollar(5);
-        assertEquals(10, dollar.times(2).amount);
-        assertEquals(15, dollar.times(3).amount);
+        assertEquals(new Dollar(10), dollar.times(2));
+        assertEquals(new Dollar(15), dollar.times(3));
     }
 
     @Test
