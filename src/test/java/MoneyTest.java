@@ -34,8 +34,9 @@ public class MoneyTest {
 
     @Test
     public void equality() {
-        Dollar dollar = new Dollar(5);
-        assertTrue(new Dollar(5).equals(dollar));
-        assertFalse(new Dollar(6).equals(dollar));
+        int amount = 5;
+        Dollar dollar = new Dollar(amount);
+        assertTrue(new Dollar(amount).equals(dollar));
+        assertFalse(new Dollar(amount + 1).equals(dollar));
     }
 }
