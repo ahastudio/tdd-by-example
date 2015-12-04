@@ -20,10 +20,10 @@ import static org.junit.Assert.assertTrue;
 // 3. refactoring (중복 제거 + 의미를 드러내기)
 
 public class MoneyTest {
-    @Test
-    public void testSample() {
+//    @Test
+//    public void testSample() {
 //        assertEquals(Dollar(5), Dollar(5) + Fran(10));
-    }
+//    }
 
     @Test
     public void dollar() {
