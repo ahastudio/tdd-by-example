@@ -1,7 +1,5 @@
 package com.woowahan.tdd.money;
 
-import com.woowahan.tdd.money.Dollar;
-import com.woowahan.tdd.money.Franc;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertFalse;
