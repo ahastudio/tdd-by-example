@@ -15,6 +15,6 @@ public class Bank {
     }
 
     public int rate(String source, String target) {
-        return (source == target) ? 1 : rates.get(new Pair(source, target));
+        return source.equals(target) ? 1 : rates.get(new Pair(source, target));
     }
 }
